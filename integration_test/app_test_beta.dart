@@ -11,7 +11,6 @@ void main() {
     binding.framePolicy = LiveTestWidgetsFlutterBindingFramePolicy.fullyLive;
     binding.testTextInput.register();
     testWidgets('tap on the floating action button, verify counter', (WidgetTester tester) async {
-      // await tester.pumpWidget(const MyApp());
       app.main(); // beta flavor
       await tester.pumpAndSettle(const Duration(seconds: 1));
       // Verify the counter starts at 0.

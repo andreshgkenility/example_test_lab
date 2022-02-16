@@ -58,6 +58,22 @@ android {
             signingConfig signingConfigs.debug
         }
     }
+
+    flavorDimensions "app"
+    productFlavors {
+        prod {
+            dimension "app"
+            applicationId "com.example.separate_app_testing"
+        }
+        rc {
+            dimension "app"
+            applicationId "com.example.separate_app_testing.rc"
+        }
+        beta {
+            dimension "app"
+            applicationId "com.example.separate_app_testing.beta"
+        }
+    }
 }
 
 flutter {
