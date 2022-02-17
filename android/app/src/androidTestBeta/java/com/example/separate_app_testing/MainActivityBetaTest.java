@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 import com.example.separate_app_testing.MainActivity;
 
 @RunWith(FlutterTestRunner.class)
-public class MainActivityTest {
+public class MainActivityBetaTest {
   @Rule
   public ActivityTestRule<MainActivity> rule = new ActivityTestRule<>(MainActivity.class, true, false);
 }
